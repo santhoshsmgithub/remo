@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patients",
+  "info": {
+    "singularName": "patient",
+    "pluralName": "patients",
+    "displayName": "Patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "DateOfBirth": {
+      "type": "date"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "Category": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.patient-category"
+    },
+    "Status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.status"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    },
+    "Contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact"
+    },
+    "Notes": {
+      "type": "text"
+    },
+    "JoinedOn": {
+      "type": "date"
+    },
+    "diagnoses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::diagnosis.diagnosis",
+      "mappedBy": "patient"
+    },
+    "treatments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::treatment.treatment",
+      "mappedBy": "patient"
+    },
+    "surgery_fund": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::surgery-fund.surgery-fund",
+      "inversedBy": "patients"
+    },
+    "hospital": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hospital.hospital",
+      "inversedBy": "patients"
+    },
+    "Need": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Transgender",
+        "Prefer not to say"
+      ]
+    },
+    "hospital_reference": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

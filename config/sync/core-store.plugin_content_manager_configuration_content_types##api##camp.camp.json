@@ -1,0 +1,272 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::camp.camp",
+  "value": {
+    "uid": "api::camp.camp",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "CampType": {
+        "edit": {
+          "label": "CampType",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "CampType",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Location": {
+        "edit": {
+          "label": "Location",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Location",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "From": {
+        "edit": {
+          "label": "From",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "From",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "To": {
+        "edit": {
+          "label": "To",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "To",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Beneficiaries": {
+        "edit": {
+          "label": "Beneficiaries",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Beneficiaries",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Services": {
+        "edit": {
+          "label": "Services",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Services",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "organizations": {
+        "edit": {
+          "label": "organizations",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "organizations",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "hospital": {
+        "edit": {
+          "label": "hospital",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "hospital",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "diagnoses": {
+        "edit": {
+          "label": "diagnoses",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Symptom"
+        },
+        "list": {
+          "label": "diagnoses",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Description": {
+        "edit": {
+          "label": "Description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "CampType",
+        "Location",
+        "Name"
+      ],
+      "edit": [
+        [
+          {
+            "name": "CampType",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Location",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "From",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "To",
+            "size": 6
+          },
+          {
+            "name": "Beneficiaries",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Services",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Description",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [
+        "organizations",
+        "hospital",
+        "diagnoses"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

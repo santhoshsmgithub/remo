@@ -1,0 +1,294 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::patient.patient",
+  "value": {
+    "uid": "api::patient.patient",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Title",
+      "defaultSortBy": "Title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Title": {
+        "edit": {
+          "label": "Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "DateOfBirth": {
+        "edit": {
+          "label": "DateOfBirth",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "DateOfBirth",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Age": {
+        "edit": {
+          "label": "Age",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Age",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Category": {
+        "edit": {
+          "label": "Category",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Category",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Status": {
+        "edit": {
+          "label": "Status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Status",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Location": {
+        "edit": {
+          "label": "Location",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Location",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Contact": {
+        "edit": {
+          "label": "Contact",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Contact",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Notes": {
+        "edit": {
+          "label": "Notes",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Notes",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "JoinedOn": {
+        "edit": {
+          "label": "JoinedOn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "JoinedOn",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "diagnoses": {
+        "edit": {
+          "label": "diagnoses",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Symptom"
+        },
+        "list": {
+          "label": "diagnoses",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "treatments": {
+        "edit": {
+          "label": "treatments",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "treatments",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Title",
+        "Name",
+        "DateOfBirth"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Title",
+            "size": 6
+          },
+          {
+            "name": "Name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "DateOfBirth",
+            "size": 4
+          },
+          {
+            "name": "Age",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "Category",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Status",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Location",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Contact",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Notes",
+            "size": 6
+          },
+          {
+            "name": "JoinedOn",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": [
+        "diagnoses",
+        "treatments"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

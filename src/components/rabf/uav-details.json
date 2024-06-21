@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_rabf_uav_details",
+  "info": {
+    "displayName": "UAVDetails",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Spherical": {
+      "type": "decimal"
+    },
+    "Cylindrical": {
+      "type": "decimal"
+    },
+    "Axis": {
+      "type": "decimal"
+    },
+    "VA": {
+      "type": "decimal"
+    }
+  }
+}

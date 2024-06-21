@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surgery_funds",
+  "info": {
+    "singularName": "surgery-fund",
+    "pluralName": "surgery-funds",
+    "displayName": "Surgery Fund"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "FundedSurgeries": {
+      "type": "integer",
+      "required": true
+    },
+    "StartDate": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "donor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::donor.donor",
+      "inversedBy": "surgery_funds"
+    },
+    "patients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::patient.patient",
+      "mappedBy": "surgery_fund"
+    }
+  }
+}

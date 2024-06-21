@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organizations",
+  "info": {
+    "singularName": "organization",
+    "pluralName": "organizations",
+    "displayName": "Organization",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    },
+    "AdministratorName": {
+      "type": "string",
+      "required": true
+    },
+    "AdminContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "OperationalContactName": {
+      "type": "string",
+      "required": true
+    },
+    "OperationalContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "volunteers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::volunteer.volunteer"
+    },
+    "donors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::donor.donor",
+      "mappedBy": "organization"
+    },
+    "camps": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::camp.camp",
+      "inversedBy": "organizations"
+    }
+  }
+}

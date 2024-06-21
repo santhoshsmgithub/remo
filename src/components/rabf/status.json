@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_rabf_statuses",
+  "info": {
+    "displayName": "Status",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Created",
+        "Active",
+        "Blocked",
+        "Dormant",
+        "Closed"
+      ]
+    }
+  }
+}

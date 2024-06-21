@@ -1,0 +1,240 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::pledge.pledge",
+  "value": {
+    "uid": "api::pledge.pledge",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Title",
+      "defaultSortBy": "Title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Title": {
+        "edit": {
+          "label": "Title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ContactInfo": {
+        "edit": {
+          "label": "ContactInfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ContactInfo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "KinContact": {
+        "edit": {
+          "label": "KinContact",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "KinContact",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "KinName": {
+        "edit": {
+          "label": "KinName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "KinName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Location": {
+        "edit": {
+          "label": "Location",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Location",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "PledgedOn": {
+        "edit": {
+          "label": "PledgedOn",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "PledgedOn",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "volunteer": {
+        "edit": {
+          "label": "volunteer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "volunteer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Referrer": {
+        "edit": {
+          "label": "Referrer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Referrer",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Title",
+        "Name",
+        "ContactInfo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Title",
+            "size": 6
+          },
+          {
+            "name": "Name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "ContactInfo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "KinContact",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "KinName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Location",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "PledgedOn",
+            "size": 4
+          },
+          {
+            "name": "Referrer",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [
+        "volunteer"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

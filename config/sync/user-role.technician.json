@@ -1,0 +1,109 @@
+{
+  "name": "Technician",
+  "description": "RABF role of Technician",
+  "type": "technician",
+  "permissions": [
+    {
+      "action": "api::camp.camp.find"
+    },
+    {
+      "action": "api::camp.camp.findOne"
+    },
+    {
+      "action": "api::diagnosis.diagnosis.create"
+    },
+    {
+      "action": "api::diagnosis.diagnosis.delete"
+    },
+    {
+      "action": "api::diagnosis.diagnosis.find"
+    },
+    {
+      "action": "api::diagnosis.diagnosis.findOne"
+    },
+    {
+      "action": "api::diagnosis.diagnosis.update"
+    },
+    {
+      "action": "api::doctor.doctor.create"
+    },
+    {
+      "action": "api::doctor.doctor.delete"
+    },
+    {
+      "action": "api::doctor.doctor.find"
+    },
+    {
+      "action": "api::doctor.doctor.findOne"
+    },
+    {
+      "action": "api::doctor.doctor.update"
+    },
+    {
+      "action": "api::hospital.hospital.find"
+    },
+    {
+      "action": "api::hospital.hospital.findOne"
+    },
+    {
+      "action": "api::organization.organization.find"
+    },
+    {
+      "action": "api::organization.organization.findOne"
+    },
+    {
+      "action": "api::patient.patient.create"
+    },
+    {
+      "action": "api::patient.patient.delete"
+    },
+    {
+      "action": "api::patient.patient.find"
+    },
+    {
+      "action": "api::patient.patient.findOne"
+    },
+    {
+      "action": "api::patient.patient.update"
+    },
+    {
+      "action": "api::pledge.pledge.create"
+    },
+    {
+      "action": "api::pledge.pledge.update"
+    },
+    {
+      "action": "api::rotaryclub.rotaryclub.find"
+    },
+    {
+      "action": "api::rotaryclub.rotaryclub.findOne"
+    },
+    {
+      "action": "api::technician.technician.find"
+    },
+    {
+      "action": "api::technician.technician.findOne"
+    },
+    {
+      "action": "api::treatment.treatment.create"
+    },
+    {
+      "action": "api::treatment.treatment.delete"
+    },
+    {
+      "action": "api::treatment.treatment.find"
+    },
+    {
+      "action": "api::treatment.treatment.findOne"
+    },
+    {
+      "action": "api::treatment.treatment.update"
+    },
+    {
+      "action": "api::volunteer.volunteer.find"
+    },
+    {
+      "action": "api::volunteer.volunteer.findOne"
+    }
+  ]
+}

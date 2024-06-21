@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donors",
+  "info": {
+    "singularName": "donor",
+    "pluralName": "donors",
+    "displayName": "Donor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.status"
+    },
+    "JoinedOn": {
+      "type": "date",
+      "required": true
+    },
+    "ContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    },
+    "PAN": {
+      "type": "string"
+    },
+    "DonationFor": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organization.organization",
+      "inversedBy": "donors"
+    },
+    "treatments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::treatment.treatment",
+      "mappedBy": "donor"
+    },
+    "donation": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::donation.donation",
+      "mappedBy": "donor"
+    },
+    "surgery_funds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::surgery-fund.surgery-fund",
+      "mappedBy": "donor"
+    }
+  }
+}

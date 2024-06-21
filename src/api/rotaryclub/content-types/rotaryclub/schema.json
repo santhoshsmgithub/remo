@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rotaryclubs",
+  "info": {
+    "singularName": "rotaryclub",
+    "pluralName": "rotaryclubs",
+    "displayName": "RotaryClub",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    },
+    "AdministratorName": {
+      "type": "string",
+      "required": true
+    },
+    "AdminContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "AlternateContactName": {
+      "type": "string",
+      "required": true
+    },
+    "AlternateContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "RIDistrict": {
+      "type": "integer",
+      "required": true
+    },
+    "volunteers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::volunteer.volunteer"
+    }
+  }
+}

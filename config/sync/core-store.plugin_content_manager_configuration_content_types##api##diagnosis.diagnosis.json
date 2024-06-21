@@ -1,0 +1,332 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::diagnosis.diagnosis",
+  "value": {
+    "uid": "api::diagnosis.diagnosis",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Symptom",
+      "defaultSortBy": "Symptom",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Date": {
+        "edit": {
+          "label": "Date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Date",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Symptom": {
+        "edit": {
+          "label": "Symptom",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Symptom",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "PrelimNotes": {
+        "edit": {
+          "label": "PrelimNotes",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "PrelimNotes",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "UAVRight": {
+        "edit": {
+          "label": "UAVRight",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "UAVRight",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "UAVLeft": {
+        "edit": {
+          "label": "UAVLeft",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "UAVLeft",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "UVADetails": {
+        "edit": {
+          "label": "UVADetails",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "UVADetails",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Advice": {
+        "edit": {
+          "label": "Advice",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Advice",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Outcome": {
+        "edit": {
+          "label": "Outcome",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Outcome",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "MaterialProvided": {
+        "edit": {
+          "label": "MaterialProvided",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "MaterialProvided",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ExistingFactors": {
+        "edit": {
+          "label": "ExistingFactors",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ExistingFactors",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "RightEye": {
+        "edit": {
+          "label": "RightEye",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "RightEye",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "LeftEye": {
+        "edit": {
+          "label": "LeftEye",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "LeftEye",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "camp": {
+        "edit": {
+          "label": "camp",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "camp",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "patient": {
+        "edit": {
+          "label": "patient",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "patient",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Date",
+        "Symptom",
+        "PrelimNotes"
+      ],
+      "editRelations": [
+        "camp",
+        "patient"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Date",
+            "size": 4
+          },
+          {
+            "name": "Symptom",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "PrelimNotes",
+            "size": 6
+          },
+          {
+            "name": "UAVRight",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "UAVLeft",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "UVADetails",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Advice",
+            "size": 6
+          },
+          {
+            "name": "Outcome",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "MaterialProvided",
+            "size": 6
+          },
+          {
+            "name": "ExistingFactors",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "RightEye",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "LeftEye",
+            "size": 12
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

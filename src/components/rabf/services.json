@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_rabf_services",
+  "info": {
+    "displayName": "Services",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "Services": {
+      "type": "enumeration",
+      "enum": [
+        "Eye power checkup",
+        "BP test",
+        "Blood sugar test",
+        "Computerized optometry",
+        "Expert optometry"
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hospital Report</title>
+</head>
+
+<body>
+    <table style="border: 1px solid black;border-collapse: collapse; width: 100%;">
+        <tr style="border: 1px solid black;border-collapse: collapse; margin-top: 25mm;">
+            <td style="border: 1px solid black;border-collapse: collapse; text-align: center;">
+                <div style="font-size: small; padding-top: 2mm; padding-bottom: 2mm; font-weight: 900;">{{hospitalData.Name}}
+                </div>
+            </td>
+        <tr>
+        <tr style="border: 1px solid black;border-collapse: collapse; margin-top: 25mm;">
+            <td style="border: 1px solid black;border-collapse: collapse; text-align: center;">
+                <div style="font-size: small; padding-top: 2mm; padding-bottom: 2mm; font-weight: 900;">{{hospitalData.Location}}
+                </div>
+            </td>
+        <tr>
+        <tr style="border: 1px solid black;border-collapse: collapse; margin-top: 25mm;">
+            <td style="border: 1px solid black;border-collapse: collapse; text-align: center;">
+                <div style="font-size: small; padding-top: 2mm; padding-bottom: 2mm; font-weight: 900;">{{hospitalData.OperationalContactInfo}}
+                </div>
+            </td>
+        <tr>
+        <tr style="border: 1px solid black;border-collapse: collapse; margin-top: 25mm;">
+            <td style="border: 1px solid black;border-collapse: collapse; text-align: center;">
+                <div
+                    style="font-size: small; padding-top: 2mm; padding-bottom: 2mm; font-weight: 900; color: rgb(253, 16, 8);">
+                    CONSOLIDATED
+                    REPORT OF CATARACT SURGERIES DONE WITH ROTARY HELPING HANDS - ACCOUNT ROTARY CLUB OF BANGALORE
+                    CHARITABLE TRUST AND ROTARY AVOIDABLE BLINDNESS FOUNDATION
+                </div>
+            </td>
+        <tr>
+        <tr style="border: 1px solid black;border-collapse: collapse;">
+            <table style="border: 1px solid black;border-collapse: collapse; width: 100%;">
+                <tr style="border: 1px solid black;border-collapse: collapse;">
+                    {{#each rowheadings}}
+                    <td style="border: 1px solid black;border-collapse: collapse;">{{this}}</td>
+                    {{/each}}
+                </tr>
+                {{#each patientdata}}
+                <tr style="border: 1px solid black;border-collapse: collapse;">
+                    {{#each this.data}}
+                    <td style="border: 1px solid black;border-collapse: collapse; font-size: small;">{{this}}</td>
+                    {{/each}}
+                    <td><img src="{{ this.photo }}" height="100" width="100"></td>
+                </tr>
+                {{/each}}
+            </table>
+        </tr>
+    </table>
+</body>
+
+</html>

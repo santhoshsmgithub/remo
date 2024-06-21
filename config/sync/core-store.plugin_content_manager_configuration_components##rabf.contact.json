@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::rabf.contact",
+  "value": {
+    "uid": "rabf.contact",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Email": {
+        "edit": {
+          "label": "Email",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Email",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Mobile": {
+        "edit": {
+          "label": "Mobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Mobile",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "WhatsAppNumber": {
+        "edit": {
+          "label": "WhatsAppNumber",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "WhatsAppNumber",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Email",
+        "Mobile",
+        "WhatsAppNumber"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Email",
+            "size": 6
+          },
+          {
+            "name": "Mobile",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "WhatsAppNumber",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_rabf_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "blender-phone"
+  },
+  "options": {},
+  "attributes": {
+    "Email": {
+      "type": "email"
+    },
+    "Mobile": {
+      "type": "biginteger",
+      "max": "9999999999",
+      "min": "1111111111"
+    },
+    "WhatsAppNumber": {
+      "type": "biginteger"
+    }
+  }
+}

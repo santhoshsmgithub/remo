@@ -1,0 +1,64 @@
+{
+  "name": "Donor",
+  "description": "RABF role of Donor",
+  "type": "donor",
+  "permissions": [
+    {
+      "action": "api::camp.camp.find"
+    },
+    {
+      "action": "api::camp.camp.findOne"
+    },
+    {
+      "action": "api::doctor.doctor.create"
+    },
+    {
+      "action": "api::doctor.doctor.delete"
+    },
+    {
+      "action": "api::doctor.doctor.find"
+    },
+    {
+      "action": "api::doctor.doctor.findOne"
+    },
+    {
+      "action": "api::doctor.doctor.update"
+    },
+    {
+      "action": "api::hospital.hospital.find"
+    },
+    {
+      "action": "api::hospital.hospital.findOne"
+    },
+    {
+      "action": "api::organization.organization.find"
+    },
+    {
+      "action": "api::organization.organization.findOne"
+    },
+    {
+      "action": "api::pledge.pledge.create"
+    },
+    {
+      "action": "api::pledge.pledge.update"
+    },
+    {
+      "action": "api::rotaryclub.rotaryclub.find"
+    },
+    {
+      "action": "api::rotaryclub.rotaryclub.findOne"
+    },
+    {
+      "action": "api::technician.technician.find"
+    },
+    {
+      "action": "api::technician.technician.findOne"
+    },
+    {
+      "action": "api::volunteer.volunteer.find"
+    },
+    {
+      "action": "api::volunteer.volunteer.findOne"
+    }
+  ]
+}

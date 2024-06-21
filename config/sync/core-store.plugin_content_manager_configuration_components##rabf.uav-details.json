@@ -1,0 +1,116 @@
+{
+  "key": "plugin_content_manager_configuration_components::rabf.uav-details",
+  "value": {
+    "uid": "rabf.uav-details",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Spherical": {
+        "edit": {
+          "label": "Spherical",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Spherical",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Cylindrical": {
+        "edit": {
+          "label": "Cylindrical",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Cylindrical",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Axis": {
+        "edit": {
+          "label": "Axis",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Axis",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "VA": {
+        "edit": {
+          "label": "VA",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "VA",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Spherical",
+        "Cylindrical",
+        "Axis"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Spherical",
+            "size": 4
+          },
+          {
+            "name": "Cylindrical",
+            "size": 4
+          },
+          {
+            "name": "Axis",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "VA",
+            "size": 4
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,236 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::organization.organization",
+  "value": {
+    "uid": "api::organization.organization",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Location": {
+        "edit": {
+          "label": "Location",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Location",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "AdministratorName": {
+        "edit": {
+          "label": "AdministratorName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "AdministratorName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "AdminContactInfo": {
+        "edit": {
+          "label": "AdminContactInfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "AdminContactInfo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "OperationalContactName": {
+        "edit": {
+          "label": "OperationalContactName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "OperationalContactName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "OperationalContactInfo": {
+        "edit": {
+          "label": "OperationalContactInfo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "OperationalContactInfo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "volunteers": {
+        "edit": {
+          "label": "volunteers",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "volunteers",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "donors": {
+        "edit": {
+          "label": "donors",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "donors",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "camps": {
+        "edit": {
+          "label": "camps",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "camps",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "Location",
+        "AdministratorName"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Location",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "AdministratorName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "AdminContactInfo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "OperationalContactName",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "OperationalContactInfo",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [
+        "volunteers",
+        "donors",
+        "camps"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

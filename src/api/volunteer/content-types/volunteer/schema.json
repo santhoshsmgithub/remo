@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "volunteers",
+  "info": {
+    "singularName": "volunteer",
+    "pluralName": "volunteers",
+    "displayName": "Volunteer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Qualification": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.status"
+    },
+    "JoinedOn": {
+      "type": "date",
+      "required": true
+    },
+    "ContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    },
+    "pledge": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pledge.pledge",
+      "inversedBy": "volunteer"
+    },
+    "Referrer": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Interest": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.interests"
+    }
+  }
+}

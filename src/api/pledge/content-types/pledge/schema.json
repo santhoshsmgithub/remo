@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pledges",
+  "info": {
+    "singularName": "pledge",
+    "pluralName": "pledges",
+    "displayName": "Pledge",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "ContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "KinContact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact",
+      "required": true
+    },
+    "KinName": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location",
+      "required": true
+    },
+    "PledgedOn": {
+      "type": "date",
+      "required": true
+    },
+    "volunteer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::volunteer.volunteer",
+      "mappedBy": "pledge"
+    },
+    "Referrer": {
+      "type": "string"
+    }
+  }
+}

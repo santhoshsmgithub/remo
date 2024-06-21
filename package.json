@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@strapi/design-system": "^1.2.0",
+    "@strapi/plugin-documentation": "4.6.1",
+    "@strapi/plugin-i18n": "4.6.1",
+    "@strapi/plugin-users-permissions": "4.6.1",
+    "@strapi/provider-upload-local": "^4.9.0",
+    "@strapi/strapi": "4.6.1",
+    "better-sqlite3": "7.4.6",
+    "lodash.set": "^4.3.2",
+    "pdf-creator-node": "^2.3.5",
+    "pdfmake": "^0.2.7",
+    "react-select": "^5.7.4",
+    "strapi-plugin-config-sync": "^1.0.4"
+  },
+  "name": "RABF-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "cs": "config-sync",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "author": {
+    "name": "Strapi developer"
+  },
+  "strapi": {
+    "uuid": "6020105b-f325-4b0e-9b70-8783e95b1580",
+    "template": "@strapi/template-blog@^1.0.0",
+    "starter": "@strapi/starter-next-blog"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

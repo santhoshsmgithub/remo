@@ -1,0 +1,22 @@
+{
+  "name": "Pledger",
+  "description": "RABF role of Pledger",
+  "type": "pledger",
+  "permissions": [
+    {
+      "action": "api::camp.camp.find"
+    },
+    {
+      "action": "api::camp.camp.findOne"
+    },
+    {
+      "action": "api::pledge.pledge.create"
+    },
+    {
+      "action": "api::pledge.pledge.delete"
+    },
+    {
+      "action": "api::pledge.pledge.update"
+    }
+  ]
+}

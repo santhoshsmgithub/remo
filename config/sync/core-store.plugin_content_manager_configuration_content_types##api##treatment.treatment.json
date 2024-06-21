@@ -1,0 +1,212 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::treatment.treatment",
+  "value": {
+    "uid": "api::treatment.treatment",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Description": {
+        "edit": {
+          "label": "Description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Cost": {
+        "edit": {
+          "label": "Cost",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Cost",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "donor": {
+        "edit": {
+          "label": "donor",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "donor",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "hospital": {
+        "edit": {
+          "label": "hospital",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "hospital",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "TreatmentDate": {
+        "edit": {
+          "label": "TreatmentDate",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "TreatmentDate",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "HospitalReference": {
+        "edit": {
+          "label": "HospitalReference",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "HospitalReference",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "patient": {
+        "edit": {
+          "label": "patient",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Title"
+        },
+        "list": {
+          "label": "patient",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "Description",
+        "Cost"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Name",
+            "size": 6
+          },
+          {
+            "name": "Description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Cost",
+            "size": 4
+          },
+          {
+            "name": "TreatmentDate",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "HospitalReference",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [
+        "donor",
+        "hospital",
+        "patient"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

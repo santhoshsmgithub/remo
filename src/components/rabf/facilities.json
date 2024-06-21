@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_rabf_facilities",
+  "info": {
+    "displayName": "Facilities",
+    "icon": "bus-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Facilities": {
+      "type": "enumeration",
+      "enum": [
+        "Mobile Eyecare Bus",
+        "Mobile Eyecare Equipment",
+        "Cataract operations",
+        "LASIK",
+        "Retinopathy",
+        "Spectacles"
+      ]
+    }
+  }
+}

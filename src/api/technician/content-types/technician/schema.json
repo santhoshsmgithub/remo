@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technicians",
+  "info": {
+    "singularName": "technician",
+    "pluralName": "technicians",
+    "displayName": "Technician",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Qualification": {
+      "type": "string",
+      "required": true
+    },
+    "Specialization": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rabf.specializations"
+    },
+    "Status": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.status"
+    },
+    "JoinedOn": {
+      "type": "date",
+      "required": true
+    },
+    "ContactInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.contact"
+    },
+    "hospital": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hospital.hospital",
+      "inversedBy": "technicians"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location"
+    }
+  }
+}

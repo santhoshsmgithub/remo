@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "camps",
+  "info": {
+    "singularName": "camp",
+    "pluralName": "camps",
+    "displayName": "Camp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CampType": {
+      "displayName": "CampType",
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.camp-type"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.location",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "From": {
+      "type": "datetime",
+      "required": true,
+      "default": "1970-01-01T04:30:00.000Z"
+    },
+    "To": {
+      "type": "datetime",
+      "required": true,
+      "default": "1970-01-01T10:30:00.000Z"
+    },
+    "Beneficiaries": {
+      "type": "enumeration",
+      "enum": [
+        "Open to public",
+        "Organization Members",
+        "Employees",
+        "Preinvited only"
+      ]
+    },
+    "Services": {
+      "displayName": "Services",
+      "type": "component",
+      "repeatable": true,
+      "component": "rabf.services"
+    },
+    "organizations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::organization.organization",
+      "mappedBy": "camps"
+    },
+    "hospital": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hospital.hospital",
+      "inversedBy": "camps"
+    },
+    "diagnoses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::diagnosis.diagnosis",
+      "mappedBy": "camp"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

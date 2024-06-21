@@ -1,0 +1,1690 @@
+{
+  "name": "Super Admin",
+  "code": "strapi-super-admin",
+  "description": "Super Admins can access and manage all features and settings.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::camp.camp",
+      "properties": {
+        "fields": [
+          "CampType.CampType",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Name",
+          "From",
+          "To",
+          "Beneficiaries",
+          "Services.Services",
+          "organizations",
+          "hospital",
+          "diagnoses",
+          "Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::camp.camp",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::camp.camp",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::camp.camp",
+      "properties": {
+        "fields": [
+          "CampType.CampType",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Name",
+          "From",
+          "To",
+          "Beneficiaries",
+          "Services.Services",
+          "organizations",
+          "hospital",
+          "diagnoses",
+          "Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::camp.camp",
+      "properties": {
+        "fields": [
+          "CampType.CampType",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Name",
+          "From",
+          "To",
+          "Beneficiaries",
+          "Services.Services",
+          "organizations",
+          "hospital",
+          "diagnoses",
+          "Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::diagnosis.diagnosis",
+      "properties": {
+        "fields": [
+          "Date",
+          "Symptom",
+          "PrelimNotes",
+          "UAVRight",
+          "UAVLeft",
+          "UVADetails.Spherical",
+          "UVADetails.Cylindrical",
+          "UVADetails.Axis",
+          "UVADetails.VA",
+          "Advice",
+          "Outcome",
+          "MaterialProvided",
+          "ExistingFactors",
+          "RightEye.Spherical",
+          "RightEye.Cylindrical",
+          "RightEye.Axis",
+          "RightEye.VA",
+          "LeftEye.Spherical",
+          "LeftEye.Cylindrical",
+          "LeftEye.Axis",
+          "LeftEye.VA",
+          "camp",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::diagnosis.diagnosis",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::diagnosis.diagnosis",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::diagnosis.diagnosis",
+      "properties": {
+        "fields": [
+          "Date",
+          "Symptom",
+          "PrelimNotes",
+          "UAVRight",
+          "UAVLeft",
+          "UVADetails.Spherical",
+          "UVADetails.Cylindrical",
+          "UVADetails.Axis",
+          "UVADetails.VA",
+          "Advice",
+          "Outcome",
+          "MaterialProvided",
+          "ExistingFactors",
+          "RightEye.Spherical",
+          "RightEye.Cylindrical",
+          "RightEye.Axis",
+          "RightEye.VA",
+          "LeftEye.Spherical",
+          "LeftEye.Cylindrical",
+          "LeftEye.Axis",
+          "LeftEye.VA",
+          "camp",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::diagnosis.diagnosis",
+      "properties": {
+        "fields": [
+          "Date",
+          "Symptom",
+          "PrelimNotes",
+          "UAVRight",
+          "UAVLeft",
+          "UVADetails.Spherical",
+          "UVADetails.Cylindrical",
+          "UVADetails.Axis",
+          "UVADetails.VA",
+          "Advice",
+          "Outcome",
+          "MaterialProvided",
+          "ExistingFactors",
+          "RightEye.Spherical",
+          "RightEye.Cylindrical",
+          "RightEye.Axis",
+          "RightEye.VA",
+          "LeftEye.Spherical",
+          "LeftEye.Cylindrical",
+          "LeftEye.Axis",
+          "LeftEye.VA",
+          "camp",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::doctor.doctor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "hospital"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::doctor.doctor",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::doctor.doctor",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::doctor.doctor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "hospital"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::doctor.doctor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "hospital"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::donation.donation",
+      "properties": {
+        "fields": [
+          "Amount",
+          "Currency",
+          "INRAmount",
+          "Date",
+          "Instrument",
+          "Receipt",
+          "Notes",
+          "donor",
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::donation.donation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::donation.donation",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::donation.donation",
+      "properties": {
+        "fields": [
+          "Amount",
+          "Currency",
+          "INRAmount",
+          "Date",
+          "Instrument",
+          "Receipt",
+          "Notes",
+          "donor",
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::donation.donation",
+      "properties": {
+        "fields": [
+          "Amount",
+          "Currency",
+          "INRAmount",
+          "Date",
+          "Instrument",
+          "Receipt",
+          "Notes",
+          "donor",
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::donor.donor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PAN",
+          "DonationFor",
+          "organization",
+          "treatments",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::donor.donor",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::donor.donor",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::donor.donor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PAN",
+          "DonationFor",
+          "organization",
+          "treatments",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::donor.donor",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PAN",
+          "DonationFor",
+          "organization",
+          "treatments",
+          "name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::facility.facility",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::facility.facility",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::facility.facility",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::facility.facility",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::facility.facility",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage",
+          "favicon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::global.global",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage",
+          "favicon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage",
+          "favicon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::homepage.homepage",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.shareImage",
+          "hero.title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::homepage.homepage",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::homepage.homepage",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.shareImage",
+          "hero.title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::homepage.homepage",
+      "properties": {
+        "fields": [
+          "seo.metaTitle",
+          "seo.metaDescription",
+          "seo.shareImage",
+          "hero.title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::hospital.hospital",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "Facilities.Facilities",
+          "doctors",
+          "technicians",
+          "camps",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::hospital.hospital",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::hospital.hospital",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::hospital.hospital",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "Facilities.Facilities",
+          "doctors",
+          "technicians",
+          "camps",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::hospital.hospital",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "Facilities.Facilities",
+          "doctors",
+          "technicians",
+          "camps",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::interest.interest",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::interest.interest",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::interest.interest",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::interest.interest",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::interest.interest",
+      "properties": {
+        "fields": [
+          "Name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::organization.organization",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "volunteers",
+          "donors",
+          "camps"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::organization.organization",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::organization.organization",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::organization.organization",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "volunteers",
+          "donors",
+          "camps"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::organization.organization",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "OperationalContactName",
+          "OperationalContactInfo.Email",
+          "OperationalContactInfo.Mobile",
+          "OperationalContactInfo.WhatsAppNumber",
+          "volunteers",
+          "donors",
+          "camps"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::patient.patient",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "DateOfBirth",
+          "Age",
+          "Category.PatientCategory",
+          "Status.Status",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Contact.Email",
+          "Contact.Mobile",
+          "Contact.WhatsAppNumber",
+          "Notes",
+          "JoinedOn",
+          "diagnoses",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::patient.patient",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::patient.patient",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::patient.patient",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "DateOfBirth",
+          "Age",
+          "Category.PatientCategory",
+          "Status.Status",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Contact.Email",
+          "Contact.Mobile",
+          "Contact.WhatsAppNumber",
+          "Notes",
+          "JoinedOn",
+          "diagnoses",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::patient.patient",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "DateOfBirth",
+          "Age",
+          "Category.PatientCategory",
+          "Status.Status",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "Contact.Email",
+          "Contact.Mobile",
+          "Contact.WhatsAppNumber",
+          "Notes",
+          "JoinedOn",
+          "diagnoses",
+          "treatments"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::pledge.pledge",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "KinContact.Email",
+          "KinContact.Mobile",
+          "KinContact.WhatsAppNumber",
+          "KinName",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PledgedOn",
+          "volunteer",
+          "Referrer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::pledge.pledge",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::pledge.pledge",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::pledge.pledge",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "KinContact.Email",
+          "KinContact.Mobile",
+          "KinContact.WhatsAppNumber",
+          "KinName",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PledgedOn",
+          "volunteer",
+          "Referrer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::pledge.pledge",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "KinContact.Email",
+          "KinContact.Mobile",
+          "KinContact.WhatsAppNumber",
+          "KinName",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "PledgedOn",
+          "volunteer",
+          "Referrer"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::rotaryclub.rotaryclub",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "AlternateContactName",
+          "AlternateContactInfo.Email",
+          "AlternateContactInfo.Mobile",
+          "AlternateContactInfo.WhatsAppNumber",
+          "RIDistrict",
+          "volunteers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::rotaryclub.rotaryclub",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::rotaryclub.rotaryclub",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::rotaryclub.rotaryclub",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "AlternateContactName",
+          "AlternateContactInfo.Email",
+          "AlternateContactInfo.Mobile",
+          "AlternateContactInfo.WhatsAppNumber",
+          "RIDistrict",
+          "volunteers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::rotaryclub.rotaryclub",
+      "properties": {
+        "fields": [
+          "Name",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "AdministratorName",
+          "AdminContactInfo.Email",
+          "AdminContactInfo.Mobile",
+          "AdminContactInfo.WhatsAppNumber",
+          "AlternateContactName",
+          "AlternateContactInfo.Email",
+          "AlternateContactInfo.Mobile",
+          "AlternateContactInfo.WhatsAppNumber",
+          "RIDistrict",
+          "volunteers"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::technician.technician",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "hospital",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::technician.technician",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::technician.technician",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::technician.technician",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "hospital",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::technician.technician",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Specialization.Specializations",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "hospital",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::treatment.treatment",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Cost",
+          "donor",
+          "hospital",
+          "TreatmentDate",
+          "HospitalReference",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::treatment.treatment",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::treatment.treatment",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::treatment.treatment",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Cost",
+          "donor",
+          "hospital",
+          "TreatmentDate",
+          "HospitalReference",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::treatment.treatment",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Cost",
+          "donor",
+          "hospital",
+          "TreatmentDate",
+          "HospitalReference",
+          "patient"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::volunteer.volunteer",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "pledge",
+          "Referrer",
+          "Photo",
+          "Interest"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::volunteer.volunteer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::volunteer.volunteer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::volunteer.volunteer",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "pledge",
+          "Referrer",
+          "Photo",
+          "Interest"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::volunteer.volunteer",
+      "properties": {
+        "fields": [
+          "Title",
+          "Name",
+          "Qualification",
+          "Status.Status",
+          "JoinedOn",
+          "ContactInfo.Email",
+          "ContactInfo.Mobile",
+          "ContactInfo.WhatsAppNumber",
+          "Location.Address",
+          "Location.District",
+          "Location.PINCode",
+          "Location.State",
+          "pledge",
+          "Referrer",
+          "Photo",
+          "Interest"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "admin::api-tokens.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::api-tokens.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::api-tokens.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::api-tokens.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::marketplace.plugins.install",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::marketplace.plugins.uninstall",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::marketplace.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::project-settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::project-settings.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::roles.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::roles.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::roles.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::roles.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::users.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::users.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::users.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::users.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::webhooks.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::webhooks.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::webhooks.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "admin::webhooks.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::config-sync.menu-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::config-sync.settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.collection-types.configure-view",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.components.configure-layout",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.single-types.configure-view",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-type-builder.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.regenerate",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::email.settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::i18n.locale.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::i18n.locale.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::i18n.locale.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::i18n.locale.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.advanced-settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.advanced-settings.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.email-templates.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.email-templates.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.providers.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.providers.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.roles.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.roles.delete",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.roles.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::users-permissions.roles.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    }
+  ]
+}

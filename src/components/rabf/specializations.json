@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_rabf_specializations",
+  "info": {
+    "displayName": "Specializations",
+    "icon": "book-reader"
+  },
+  "options": {},
+  "attributes": {
+    "Specializations": {
+      "type": "enumeration",
+      "enum": [
+        "Cataract Surgery",
+        "Eye replacement",
+        "Cornea",
+        "Lasik"
+      ]
+    }
+  }
+}

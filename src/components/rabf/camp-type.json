@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_rabf_camp_types",
+  "info": {
+    "displayName": "CampType",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CampType": {
+      "type": "enumeration",
+      "enum": [
+        "Direct",
+        "General",
+        "Webinar",
+        "Stall",
+        "Community Eyecare Camp",
+        "Awareness Campaign",
+        "Mobile Camp",
+        "School Camp"
+      ]
+    }
+  }
+}

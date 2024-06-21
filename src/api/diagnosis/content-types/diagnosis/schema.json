@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diagnoses",
+  "info": {
+    "singularName": "diagnosis",
+    "pluralName": "diagnoses",
+    "displayName": "Diagnosis",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Symptom": {
+      "type": "string",
+      "required": true
+    },
+    "PrelimNotes": {
+      "type": "text"
+    },
+    "UAVRight": {
+      "type": "string",
+      "regex": "^[0-9]//[0-9]",
+      "required": false
+    },
+    "UAVLeft": {
+      "type": "string",
+      "regex": "^[0-9]//[0-9]",
+      "required": false
+    },
+    "UVADetails": {
+      "displayName": "UAVDetails",
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.uav-details"
+    },
+    "Advice": {
+      "type": "string",
+      "required": true
+    },
+    "Outcome": {
+      "type": "enumeration",
+      "enum": [
+        "No further action",
+        "Spectacles to be obtained",
+        "Spectacles provided",
+        "Medicines to be obtained",
+        "Medicines provided",
+        "Surgery recommended",
+        "Further investigation recommended",
+        "Operated Left Eye",
+        "Operated Right Eye"
+      ]
+    },
+    "MaterialProvided": {
+      "type": "string"
+    },
+    "ExistingFactors": {
+      "type": "enumeration",
+      "enum": [
+        "Diabetes",
+        "Severe Diabetes",
+        "Hypertensive",
+        "Liver disease",
+        "Renal disease",
+        "Cardiac disease",
+        "Asthmatic"
+      ]
+    },
+    "RightEye": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.uav-details"
+    },
+    "LeftEye": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rabf.uav-details"
+    },
+    "camp": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::camp.camp",
+      "inversedBy": "diagnoses"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::patient.patient",
+      "inversedBy": "diagnoses"
+    }
+  }
+}
